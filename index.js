@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	display.textContent = timer.getTimeString();
 
 	if ('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('/sw.js');
+		navigator.serviceWorker.register('sw.js');
 	}
 
 	document.querySelector('#timer-form').addEventListener('submit', (e) => {
