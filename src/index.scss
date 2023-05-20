@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 16px;
+}
+
+body {
+  background-color: rgba($color: green, $alpha: 0.8);
+  font: 14px/1.5 Arial, 'Helvetica', sans-serif;
+}
+
+button.btn {
+  border: 0;
+  padding: 8px 16px;
+  border-radius: 4px;
+
+  &.btn-primary {
+    background-color: adjust-hue($color: blue, $degrees: 20);
+    color: #fff;
+  }
+
+  &.btn-success {
+    background-color: adjust-hue($color: yellow, $degrees: 20);
+    color: #000;
+  }
+
+  &.btn-danger {
+    background-color: adjust-hue($color: red, $degrees: 20);
+    color: #000;
+  }
+}
+
+#timer-display {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+#timer-form {
+  .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 8px;
+  }
+}
